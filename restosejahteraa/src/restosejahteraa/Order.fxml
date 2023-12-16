@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane prefHeight="400.0" prefWidth="649.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="restosejahteraa.OrderController">
+    <children>
+      <Label layoutX="296.0" layoutY="23.0" text="ORDER" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <HBox layoutX="40.0" layoutY="64.0" spacing="20">
+         <!-- Makanan 1 -->
+         <VBox spacing="5">
+            <ImageView fitHeight="100" fitWidth="100">
+               <image>
+                  <Image url="@food1.png" />
+               </image>
+            </ImageView>
+            <Label text="Makanan 1" textAlignment="CENTER" />
+            <Spinner fx:id="spinnerMakanan1" prefHeight="25.0" prefWidth="99.0" />
+         </VBox>
+         <!-- Makanan 2 -->
+         <VBox spacing="5">
+            <ImageView fitHeight="100" fitWidth="95.0">
+               <image>
+                  <Image url="@food2.png" />
+               </image>
+            </ImageView>
+            <Label text="Makanan 2" />
+            <Spinner fx:id="spinnerMakanan2" prefHeight="25.0" prefWidth="96.0" />
+         </VBox>
+         <!-- Makanan 3 -->
+         <VBox spacing="5">
+            <ImageView fitHeight="100" fitWidth="100">
+               <image>
+                  <Image url="@food1.png" />
+               </image>
+            </ImageView>
+            <Label text="Makanan 3" />
+            <Spinner fx:id="spinnerMakanan3" prefHeight="25.0" prefWidth="97.0" />
+         </VBox>
+         <!-- Makanan 4 -->
+         <VBox spacing="5">
+            <ImageView fitHeight="100" fitWidth="100">
+               <image>
+                  <Image url="@food2.png" />
+               </image>
+            </ImageView>
+            <Label text="Makanan 4" />
+            <Spinner fx:id="spinnerMakanan4" prefHeight="25.0" prefWidth="99.0" />
+         </VBox>
+         <!-- Makanan 5 -->
+         <VBox spacing="5">
+            <ImageView fitHeight="100" fitWidth="100">
+               <image>
+                  <Image url="@food1.png" />
+               </image>
+            </ImageView>
+            <Label text="Makanan 5" />
+            <Spinner fx:id="spinnerMakanan5" prefHeight="25.0" prefWidth="98.0" />
+         </VBox>
+      </HBox>
+      <Button layoutX="552.0" layoutY="293.0" mnemonicParsing="false" onAction="#beliButtonClicked" prefHeight="25.0" prefWidth="63.0" text="Beli" />
+      <TableView layoutX="40.0" layoutY="235.0" prefHeight="141.0" prefWidth="285.0">
+        <columns>
+          <TableColumn fx:id="colItem" prefWidth="87.33333969116211" text="Item" />
+            <TableColumn fx:id="colKuantitas" prefWidth="92.66667175292969" text="Kuantitas" />
+            <TableColumn fx:id="colHarga" prefWidth="102.66668701171875" text="Harga" />
+        </columns>
+      </TableView>
+      <Label layoutX="339.0" layoutY="264.0" text="Total  : " />
+      <TextField fx:id="tfTotal" layoutX="393.0" layoutY="260.0" prefHeight="25.0" prefWidth="223.0" />
+   </children>
+</AnchorPane>

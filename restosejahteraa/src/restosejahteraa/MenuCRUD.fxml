@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: FFFB75;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="restosejahteraa.MenuCRUDController">
+   <children>
+      <Label layoutX="40.0" layoutY="82.0" text="Nama Makanan :" />
+      <TextField fx:id="tfNamaMenu" layoutX="40.0" layoutY="99.0" prefHeight="25.0" prefWidth="167.0" />
+      <Label layoutX="40.0" layoutY="135.0" text="Harga Makanan :" />
+      <TextField fx:id="tfHargaMenu" layoutX="40.0" layoutY="152.0" prefHeight="25.0" prefWidth="167.0" />
+      <Label layoutX="40.0" layoutY="188.0" text="Stock Makanan :" />
+      <TextField fx:id="tfStockMenu" layoutX="40.0" layoutY="205.0" prefHeight="25.0" prefWidth="167.0" />
+      <Button fx:id="btnInsert" layoutX="40.0" layoutY="253.0" mnemonicParsing="false" onAction="#handleButtonAction" style="-fx-background-color: white;" text="Insert" />
+      <Button fx:id="btnUpdate" layoutX="92.0" layoutY="253.0" mnemonicParsing="false" onAction="#handleButtonAction" style="-fx-background-color: white;" text="Update" />
+      <Button fx:id="btnDelete" layoutX="157.0" layoutY="253.0" mnemonicParsing="false" onAction="#handleButtonAction" style="-fx-background-color: white;" text="Delete" />
+      <TableView fx:id="tvMenu" layoutX="236.0" layoutY="79.0" prefHeight="295.0" prefWidth="319.0">
+        <columns>
+            <TableColumn fx:id="kolomNamaMenu" prefWidth="132.0" text="namaMenu" />
+            <TableColumn fx:id="kolomHargaMenu" prefWidth="98.0" text="hargaMenu" />
+            <TableColumn fx:id="kolomStockMenu" prefWidth="86.66668701171875" text="stockMenu" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="65.0" fitWidth="203.0" layoutX="63.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@LOGO%20RESTO.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="65.0" fitWidth="55.0" layoutX="13.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@food1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="94.0" fitWidth="123.0" layoutX="31.0" layoutY="299.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@MTOR.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnInsert1" layoutX="342.0" layoutY="34.0" mnemonicParsing="false" onAction="#handleButtonAction" style="-fx-background-color: orange;" text="HOMEPAGE" />
+      <Button fx:id="btnInsert11" layoutX="437.0" layoutY="34.0" mnemonicParsing="false" onAction="#handleButtonAction" style="-fx-background-color: orange;" text="History Pemesanan" />
+      <ImageView fitHeight="65.0" fitWidth="55.0" layoutX="190.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@food2.png" />
+         </image>
+      </ImageView>
+
+   </children>
+</AnchorPane>

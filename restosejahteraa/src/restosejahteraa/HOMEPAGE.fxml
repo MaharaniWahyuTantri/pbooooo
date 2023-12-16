@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="restosejahteraa.HOMEPAGEController">
+   <children>
+      <AnchorPane style="-fx-background-color: orange;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="164.0" fitWidth="170.0" layoutX="215.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="162.23333740234375" AnchorPane.leftAnchor="215.0" AnchorPane.rightAnchor="215.0" AnchorPane.topAnchor="74.0">
+               <image>
+                  <Image url="@food1.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="64.0" layoutY="136.0" prefHeight="33.0" prefWidth="151.0" text="Hello, Welcome!" textFill="WHITE" AnchorPane.bottomAnchor="232.66666666666663" AnchorPane.leftAnchor="64.0" AnchorPane.rightAnchor="385.3333333333333" AnchorPane.topAnchor="136.0">
+               <font>
+                  <Font name="Berlin Sans FB" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="389.0" layoutY="139.0" prefHeight="33.0" prefWidth="151.0" text="Indonesian Food" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="22.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnSignUpPegawai" layoutX="211.0" layoutY="251.0" mnemonicParsing="false" onAction="#handleBtnSignUpPegawai" prefHeight="32.0" prefWidth="178.0" style="-fx-background-color: WHITE;" text="DAFTAR PEGAWAI" AnchorPane.bottomAnchor="117.66666666666663" AnchorPane.leftAnchor="211.0" AnchorPane.rightAnchor="211.0" AnchorPane.topAnchor="251.0" />
+            <Button fx:id="btnSignUpPelanggan" layoutX="211.0" layoutY="292.0" mnemonicParsing="false" onAction="#handleBtnSignUpPelanggan" prefHeight="34.0" prefWidth="178.0" style="-fx-background-color: WHITE;" text="DAFTAR PELANGGAN" AnchorPane.bottomAnchor="74.66666666666663" AnchorPane.leftAnchor="211.0" AnchorPane.rightAnchor="211.0" AnchorPane.topAnchor="292.0" />
+            <ImageView fitHeight="76.0" fitWidth="78.0" layoutX="211.0" layoutY="172.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@food2.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="107.0" fitWidth="54.0" layoutX="326.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@indo-PhotoRoom%20(10).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="64.0" fitWidth="140.0" layoutX="230.0" layoutY="23.0">
+               <image>
+                  <Image url="@LOGO%20RESTO.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
