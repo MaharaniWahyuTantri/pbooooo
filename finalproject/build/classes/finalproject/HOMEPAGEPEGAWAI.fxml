@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="restosejahtera.HOMEPAGEPEGAWAIController">
+   <children>
+      <AnchorPane style="-fx-background-color: orange;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="181.0" fitWidth="250.0" layoutX="336.0" layoutY="205.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@MTOR.png" />
+               </image>
+            </ImageView>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="56.0" layoutX="361.0" layoutY="17.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+            <Label fx:id="displayNama" layoutX="370.0" layoutY="23.0" prefHeight="22.0" prefWidth="192.0" text="(Nama Pegawai)">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="displayJabatan" layoutX="370.0" layoutY="45.0" prefHeight="22.0" prefWidth="183.0" text="(Jabatan)" textAlignment="CENTER">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button fx:id="btnHome" layoutX="22.0" layoutY="77.0" mnemonicParsing="false" onAction="#handlebtnHome" prefHeight="46.0" prefWidth="131.0" style="-fx-background-color: WHITE;" text="HOME" AnchorPane.bottomAnchor="277.0" AnchorPane.leftAnchor="21.99999999999997" AnchorPane.rightAnchor="446.66666666666663" AnchorPane.topAnchor="76.66666666666669" />
+      <Button fx:id="btnManageMenu" layoutX="22.0" layoutY="132.0" mnemonicParsing="false" onAction="#handlebtnManageMenu" prefHeight="46.0" prefWidth="131.0" style="-fx-background-color: WHITE;" text="MANAGE MENU" />
+      <Button fx:id="btnCurrentOrder" layoutX="22.0" layoutY="191.0" mnemonicParsing="false" onAction="#handlebtnCurrentOrder" prefHeight="46.0" prefWidth="131.0" style="-fx-background-color: WHITE;" text="CURRENT ORDER" />
+      <Button fx:id="btnRekapOrderan" layoutX="22.0" layoutY="250.0" mnemonicParsing="false" onAction="#handleRekapOrderan" prefHeight="46.0" prefWidth="131.0" style="-fx-background-color: WHITE;" text="REKAP ORDERAN" />
+      <ImageView fitHeight="70.0" fitWidth="144.0" layoutX="16.0" layoutY="7.0">
+         <image>
+            <Image url="@LOGO%20RESTO.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

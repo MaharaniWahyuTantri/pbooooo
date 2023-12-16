@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: soft blue;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="finalproject.MenuCRUDController">
+   <children>
+      <Label layoutX="41.0" layoutY="51.0" text="Nama Makanan :" />
+      <TextField fx:id="tfNamaMenu" layoutX="41.0" layoutY="68.0" prefHeight="25.0" prefWidth="167.0" />
+      <Label layoutX="41.0" layoutY="104.0" text="Harga Makanan :" />
+      <TextField fx:id="tfHargaMenu" layoutX="41.0" layoutY="121.0" prefHeight="25.0" prefWidth="167.0" />
+      <Label layoutX="41.0" layoutY="157.0" text="Stock Makanan :" />
+      <TextField fx:id="tfStockMenu" layoutX="41.0" layoutY="174.0" prefHeight="25.0" prefWidth="167.0" />
+      <Button fx:id="btnInsert" layoutX="41.0" layoutY="232.0" mnemonicParsing="false" onAction="#handlebtnInsert" text="Insert" />
+      <Button fx:id="btnUpdate" layoutX="93.0" layoutY="232.0" mnemonicParsing="false" onAction="#handlebtnUpdate" text="Update" />
+      <Button fx:id="btnDelete" layoutX="158.0" layoutY="232.0" mnemonicParsing="false" onAction="#handlebtnDelete" text="Delete" />
+      <TableView fx:id="tvMenu" layoutX="236.0" layoutY="57.0" prefHeight="317.0" prefWidth="328.0">
+        <columns>
+          <TableColumn fx:id="kolomidMenu" prefWidth="69.3333740234375" text="idMenu" />
+          <TableColumn fx:id="kolomNamaMenu" prefWidth="92.0" text="namaMenu" />
+            <TableColumn fx:id="kolomHargaMenu" text="hargaMenu" />
+            <TableColumn fx:id="kolomStockMenu" prefWidth="86.66668701171875" text="stockMenu" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnHomepage" layoutX="236.0" layoutY="14.0" mnemonicParsing="false" onAction="#handlebtnHomepage" text="HOMEPAGE" />
+      <Button fx:id="btnHistoryOrder" layoutX="459.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleHistoryOrder" text="HISTORY ORDER" />
+   </children>
+</AnchorPane>
